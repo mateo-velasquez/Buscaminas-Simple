@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BuscaMinas</title>
+
+    <!--Hojas de estilos-->
+    <link rel="stylesheet" href="Estilo1.css" type="text/css"> <!--Hoja de Estilos-->
+    <link rel="stylesheet" href="Estilo.css" type="text/css">  <!--Media Querys-->
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@500&display=swap"
+          rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Hoja de funciones-->
+    <script type="text/javascript" src="nuestrasFunciones.js"></script>
+
+    <!--Palabras clave-->
+    <meta content="Agustina Perez" name="author">
+    <meta content="Mateo Velasquez" name="author">
+    <meta content="juego buscaminas" name="description">
+    <meta content="buscaminas, juego, entretenimiento, estrategia" name="keywords">
+</head>
+
+<body>
+<section id="title">
+    <!--header-->
+    <div>
+        <header>
+            <h1>
+                Busca<span class="bicolor">Minas</span>
+            </h1>
+        </header>
+    </div>
+    <!--input-->
+    <div id="input">
+        <label for="gamemode">Modo de juego</label>
+        <select class="gamemode" id="gamemode">
+            <option value="facil">facil</option>
+            <option value="intermedio">medio</option>
+            <option value="dificil">dificil</option>
+        </select>
+        <label for="nameInput">Ingrese su nombre:</label>
+        <input type="text" id="nameInput" placeholder="Agus">
+    </div>
+
+    <!--menu-->
+    <div class="menu">
+        <img class="parainfo" id="bomb_menu" src="Imagenes/bomba.png" alt="Imagen de una bombita">
+        <div class="info" id="contador">00</div>
+
+        <img class="parainfo" id="timer" src="Imagenes/alarma-activada.png" alt="Imagen de un reloj">
+        <div class="info">
+            <span id="cronometro"></span>
+        </div>
+
+        <label for="reinicio">
+            <button id="reinicio">
+                <img class="parainfo" id="restart" src="Imagenes/reiniciar.png" alt="Imagen de un reinicio">
+            </button>
+        </label>
+    </div>
+</section>
+
+<!--tablero-->
+<table id="tablero" oncontextmenu="return false">
+
+</table>
+
+<footer>
+    <p>Proyecto 2023. Perez, Agustina - Velasquez, Mateo.
+        <a href="https://youtu.be/LFECjSinhp0" target="_blank">Como jugar</a>
+    </p>
+</footer>
+
+<div>
+    <canvas id="miCanvas"></canvas>
+</div>
+
+</body>
+</html>
