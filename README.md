@@ -1,6 +1,6 @@
 # Simple Minesweeper
 
-This repository contains a project developed during the **third semester** of the **Computer Engineering** program at the **Catholic University of Córdoba**, as part of the course **Computer Lab 2** (Plan 2016).
+This repository contains a project developed during the **third semester** of the **Systems Engineering** program at the **Catholic University of Córdoba**, as part of the course **Computer Lab 2** (Plan 2016).
 
 🔗 **Project link**: [View Simple Minesweeper](https://ucc-labcompu2-historico.github.io/proyecto2023-perez-velasquez/)
 
